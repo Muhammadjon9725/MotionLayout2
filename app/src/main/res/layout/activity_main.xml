@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardMaxElevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_search_24" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardMaxElevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_save_alt_24" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="O'tkir Hoshimov"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:alpha="0.5"
+                android:text="(1923-2019)" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/otkirhoshimov" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:alpha=".5"
+                        android:text="Oʻtkir Hoshimov – taniqli oʻzbek yozuvchisi va jamoat arbobi. 1941-yili 5-avgustda Toshkentda Doʻmbirobod mahallasida tugʻilgan. Toshkent (2013-yil 24-may Juma kuni ogʻir hastalik tufayli Oilasi davrasida Toshkentda vafot etgan) Davlat universiteti filologiya fakultetida oʻqigan. Turli tahririyat va nashriyotlarda ishlagan. Shuningdek, u Oʻzbekiston Respublikasi Yozuvchilar qoʻmita raisi vazifasini bajargan.
+Hayoti
+
+Oʻtkir Hoshimov 1941-yil, 5-avgustda Toshkent shahrida oddiy bir oilada dunyoga keldi. Yozuvchining bolaligi urush va urushdan keyingi mashaqqatli davrga toʻgʻri keldi. „Oʻsha davrda non tanqis boʻlgani bilan kutubxonalarda kitob koʻp edi“¸ deya eslagan edi yozuvchi oʻz xotiralarida.[1]
+
+Kitob oʻqish barobarida Oʻtkir Hoshimov pochtada xat tarqatuvchi boʻlib ishladi. Aynan mana shu ish Oʻtkir Hoshimovni oddiy odamlarning kitobdagi hayotdan butunlay boshqa turmushiga oshno qildi.
+
+Boʻlajak yozuvchi 1964-yilda Oʻzbekiston Milliy universitetining (sobiq ToshDU) filologiya fakulteti jurnalistika boʻlimini sirtdan tugatdi.
+
+1959–1962-yillari „Qizil Oʻzbekiston“, 1963–1966-yil „Toshkent haqiqati“ 1966–1982-yillari „Toshkent oqshomi“ gazetalarida adabiy xodim boʻlib ishladi.Uning kitoblari juda qiziqarli va hayotiy kitob hisoblanadi
+Ijodi
+
+Yozuvchining ilk asari 1962-yilda „Poʻlat chavandoz“ nomida ocherklar toʻplami tarzida nashrdan chiqdi. Ammo yozuvchiga muvaffaqiyat keltirgan asar 1970-yilda nashr qilingan „Bahor qaytmaydi“ qissasi boʻldi.
+
+Oʻsha paytda nashr qilinayotgan mafkura targʻibotidan iborat asarlar fonida yozuvchi Oʻtkir Hoshimovning oddiy insoniy munosabatlar haqidagi bu asari qorongʻu osmonda chaqnagan mushak kabi eslanadi..
+
+Bu asar asosida suratga olingan videofilm oʻz vaqtida eng koʻp tomosha qilingan asar sifatida tarixga kirdi.
+
+Oʻtkir Hoshimovning bir qancha asarlari ekranlashtirilgan. „Xazon boʻlgan bahor“, „Inson sadoqati“ (1975), „Vijdon dorisi“, „Toʻylar muborak“ (1979), „Qatagʻon“ kabi drama, komediya, bir qator kinossenariylar muallifi. „Daftar hoshiyasidagi bitiklar“(2001) kitobi ijtimoiy -maʼnaviy hayotda muayyan iz qoldirgan.
+
+„Choʻl havosi“ nomli birinchi qissasi 1963 yilda bosilib chiqqan. Talabchan adib Abdulla Qahhorning eʼtiboriga sazovor boʻlgan. „Urushning soʻnggi qurboni“, „Yanga“, „Muhabbat“, „Dehqonning bir kuni“, „Umr savdosi“, „Quyosh tarozusi“, „Oq bulut, oppoq bulut“ singari oʻnlab hikoyalari, „Shamol esaveradi“ (1968), „Bahor qaytmaydi“ (1970), „Qalbingga quloq sol“ (1973), „Dunyoning ishlari“ (1982), „Ikki karra ikki-besh“ (1987) qissalari, „Nur borki, soya bor“ (1976), „Ikki eshik orasi“ (1985), „Tushda kechgan umrlar“ (1993) kabi romanlar yozgan. Adib asarlarida zamonaviy oʻzbek xalqining maʼnaviy dunyosi, milliy ruhi, urf-odatlari tasvirlangan.
+
+„Toʻylar muborak“, „Sizdan ugina, bizdan bugina“, „Vijdon dorisi“, „Inson sadoqati“, „Qatagʻon“ singari pyesalar muallif. U E. Xemenguey, K. Simonov, A. Kuprin va boshqa adiblarning asarlarini oʻzbek tiliga tarjima qilgan.
+
+Oʻtgan asrning sovet mafkurasi hukmron boʻlgan 70-yillarida Oʻtkir Hoshimov Oʻzbekiston televideniesida „Bahs“ deb nomlangan eshittirishlarni olib bordi. Bu eshittirishlar yozuvchining „Qalbingga quloq sol“ ¸Dunyoning ishlari „Nur borki, soya bor“ kabi asarlarida koʻtarilgan oʻtkir ijtimoiy muammolar haqidagi bahslarning davomi boʻldi.
+
+Keyinchalik yozuvchi „Ikki eshik orasi“(1986), „Tushda kechgan umrlar“ (1994) romanlarida zamondosh-asrdosh odamlar taqdirini¸ 20-asrning eng keskin fojiaviy hodisalari Ikkinchi jahon urushi hamda mustabid tuzumning jinoyatkorona siyosati oqibatlari bilan bogʻliq holda tahlil va talqin etishga urindi.
+
+Hali Oʻzbekistonda Sovet mafkurasi hukmron boʻlgan 1990-yilda Oʻtkir Hoshimov oʻzi bosh muharrir boʻlgan „Sharq yulduzi“jurnalida Qurʼoni karimning ilk oʻzbekcha tarjimasini chop qilishga jurʼat qildi.
+
+Tarixga Gorbachev hurriyati deya kirgan  davri Oʻtkir Hoshimovga jasorat berdi¸ deya aytish mumkin.
+
+Oʻsha paytdagi Oʻzbekiston rahbariyati zehniyatida ashaddiy ateizm mavjudligi hisobga olinsa¸ bu haqiqatda jasorat namunasi deya eslanadigan qadam.
+
+Toshkentdagi „Ateizm uyi“ kabi idora vakillari Qurʼon suralarida milliy kamsitish elementlari bor¸ deya „Sharq yulduzi“ jurnalida Qurʼoni karim tarjimasini chop qilinishini toʻxtatishga urinishdi.
+
+Bu toʻsiqlarga qaramasdan¸ Oʻtkir Hoshimov bu tarjimani toʻligʻicha jurnalning bir necha sonlarida bosib chiqara oldi.
+
+Marhum yozuvchi 2001-yili „Buyuk xizmatlari uchun“ ordeni bilan mukofotlangan edi.
+
+Noyob iste'dod sohibi O'tkir Hoshimov adabiyotga Abdulla Oripov, Omon Muxtor, Shukur Holmirzayev singari bir qator tengdoshlari bilan birga adabiyotga kirib keldi. O'sha paytda adabiyotimizning Oybek, G'afur G'ulom, Abdulla Qahhor, Maqsud Shayxzoda singari ulkan yozuvchilari hayot bo'lib, ularning nazariga tushish hammaga ham nasib etavermasdi.O'tkir Hoshimov esa Abdulla Qahhordek mashhur san'atkor etiborini jalb qilgan yoshlardan edi. Roman qissa,hikoyalarida so'z san'atining azaliy muammosi-inson taqdiri va qalbining badiiy taxlili ham mavjud edi. Shoirni romanlari, hikoyalari ko'pdir.
+
+Umrining soʻnggi yillarini Oʻtkir Hoshimov oʻzbek hukumatining targʻibot-tashviqot kompaniyalaridan xoliroqda oʻtkazdi. Oʻzbek prozasida zamonaviy mavzularni imkon qadar mafkuradan xoli tarzda yorita olgan taniqli yozuvchi Oʻtkir Hoshimov 2013-yil, 24-may kuni, 71 yoshida olamdan oʻtdi. Toshkentning Doʻmbirobod masjididagi juma namozidan keyin yozuvchi jasadi tuproqqa berildi.
+" android:textColor="@color/black" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
